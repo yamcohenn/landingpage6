@@ -11,7 +11,7 @@ body {
   background-size: cover;
 }
 
-.conteiner {
+.conteiner1 {
   background-color: rgba(26, 26, 26, 0.831372549);
   color: #FFFFFF;
   position: absolute;
@@ -20,14 +20,20 @@ body {
   padding: 30px;
   padding-bottom: 70px;
 }
+.conteiner1 .form-control {
+  border-radius: 0;
+}
+.conteiner1 .form-control:focus {
+  border: 1px solid #D31C75 !important;
+  box-shadow: none !important;
+}
 
-.child {
+.child1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  text-align: end;
 }
 
 input {
@@ -38,6 +44,7 @@ input {
   gap: 15px;
   width: 270px;
   height: 30px;
+  border: 1px solid #D31C75 !important;
 }
 
 button {
@@ -45,10 +52,11 @@ button {
   color: #FFFFFF;
   border: none;
   padding: 6px 35px 6px 35px;
+  margin-top: 20px !important;
 }
 
 @media (max-width: 430px) {
-  .conteiner {
+  .conteiner1 {
     right: 0%;
     padding: 10%;
   }
